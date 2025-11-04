@@ -1,10 +1,8 @@
-apiVersion: skiperator.kartverket.no/v1beta1
+apiVersion: skiperator.kartverket.no/v1alpha1
 kind: SKIPJob
 metadata:
-  name: test-job3
+  name: test-job
   namespace: default
-  labels:
-    version: "v1alpha1"
 spec:
   image: busybox:latest
   command: ["echo", " Hello world!"]
