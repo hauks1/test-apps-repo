@@ -7,7 +7,6 @@ spec:
   image: busybox:latest
   command: ["echo", "I am advanced ish"]
   cron:
-    schedule: "*/10 * * *"
-    suspend: true
+    schedule: "*/1 * * *"
   job:
     ttlSecondsAfterFinished: 100
