@@ -7,8 +7,8 @@ spec:
   container:
     image: busybox:latest
     command: ["echo", " Hello world!"]
-    cron:
-      schedule: "*/10 * * *"
-      suspend: true
+  cron:
+    schedule: "*/10 * * *"
+    suspend: true
   job:
     ttlSecondsAfterFinished: 100
