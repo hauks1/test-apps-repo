@@ -4,7 +4,8 @@ metadata:
   name: test-job
   namespace: default
 spec:
-  image: busybox:latest
-  command: ["echo", " Hello world!"]
+  container:
+    image: busybox:latest
+    command: ["echo", " Hello world!"]
   job:
     ttlSecondsAfterFinished: 100
