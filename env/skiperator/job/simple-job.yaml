@@ -2,7 +2,7 @@ apiVersion: skiperator.kartverket.no/v1alpha1
 kind: SKIPJob
 metadata:
   name: test-job
-  namespace: job
+  namespace: default
   labels:
     version: "v1alpha1"
 spec:
