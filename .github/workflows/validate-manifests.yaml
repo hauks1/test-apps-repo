@@ -1,0 +1,11 @@
+name: Verify Kubernetes Manifest Validity
+
+on: pull_request
+
+jobs:
+  validate:
+    name: validate-k8s-manifests
+    uses: kartverket/github-workflows/.github/workflows/run-k8s-manifests-validate.yaml@latest
+    with:
+      path: env # validate files in the env/ directory
+      skipctl-version: latest # using the latest skipctl version
