@@ -6,6 +6,6 @@ metadata:
 spec:
   container:
     image: busybox:latest
-    command: ["echo", " Hello world!"]
+    command: ["echo", " Hello world!!!!!"]
   job:
     ttlSecondsAfterFinished: 100
