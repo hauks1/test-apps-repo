@@ -9,8 +9,5 @@ spec:
   container:
     image: busybox:latest
     command: ["echo", " Hello world from the v1alpha1 API"]
-    cron:
-      schedule: "*/5 * * *"
-      suspend: true
   job:
     ttlSecondsAfterFinished: 100
