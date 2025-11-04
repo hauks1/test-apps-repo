@@ -1,11 +1,14 @@
 apiVersion: skiperator.kartverket.no/v1alpha1
 kind: SKIPJob
 metadata:
-  name: test-job
+  name: test-cron-job
   namespace: default
 spec:
   container:
     image: busybox:latest
     command: ["echo", " Hello world!"]
+    cron:
+      schedule: "*/10 * * *"
+      suspend: true
   job:
     ttlSecondsAfterFinished: 100
