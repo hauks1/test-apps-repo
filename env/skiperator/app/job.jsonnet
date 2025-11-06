@@ -9,7 +9,7 @@
       },
       spec: {
         container: {
-          image: 'go-http-server-image',
+          image: 'go-http-server-image1',
         },
         cron: {
           schedule: '10 * * * *'
