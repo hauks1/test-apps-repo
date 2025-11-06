@@ -11,6 +11,9 @@
         container: {
           image: 'go-http-server-image',
         },
+        cron: {
+          schedule: '10 * * * *'
+        }
 
       },
     },
