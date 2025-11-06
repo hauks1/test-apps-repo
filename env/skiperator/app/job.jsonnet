@@ -9,7 +9,7 @@
       },
       spec: {
         container: {
-          image: 'go-http-server',
+          image: 'go-http-server-image',
         },
 
       },
