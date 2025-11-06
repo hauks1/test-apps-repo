@@ -2,15 +2,13 @@
   apiVersion: 'v1',
   items: [
     {
-      apiVersion: 'skiperator.kartverket.no/v1alpha1',
+      apiVersion: 'skiperator.kartverket.no/v1beta1',
       kind: 'SKIPJob',
       metadata: {
-        name: 'test-job',
+        name: 'beta-test-job',
       },
       spec: {
-        container: {
-          image: 'go-http-server',
-        },
+        image: 'go-http-server',
         cron: {
           schedule: '* * * * *'
         }
