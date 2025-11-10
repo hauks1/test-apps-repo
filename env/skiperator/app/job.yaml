@@ -16,7 +16,7 @@ spec:
         echo "Starting curl job..."
         echo "Curling andreres service at http://andreres:8088/health"
         curl -v http://andreres:8088/health
-        echo ""
+        echo "THIS IS TO TEST AUTOSYNC!"
         echo "Job completed!"
     
   # Run every minute for testing (adjust as needed)
