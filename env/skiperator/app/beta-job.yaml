@@ -1,0 +1,23 @@
+apiVersion: skiperator.kartverket.no/v1beta1
+kind: SKIPJob
+metadata:
+  name: beta-curl-andreres-server
+  namespace: default
+spec:
+   # Use a container with curl installed
+  image: curlimages/curl:latest
+    
+  # Command to curl your server
+  command:
+    - sh
+    - -c
+    - |
+      echo "Starting beta curl job..."
+      echo "Curling andreres service at http://andreres:8088/health"
+      curl -v http://andreres:8088/health
+      echo "v1beta1"
+      echo "Beta Job completed!"
+    
+  # Run every minute for testing (adjust as needed)
+  cron:
+    schedule: "*/1 * * * *"
